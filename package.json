@@ -31,7 +31,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "cross-env PORT=3001 react-scripts start",
+    "start:local": "cross-env PORT=3001 REACT_APP_INVOICE_LIST=http://localhost:3000/invoices/list react-scripts start",
+    "start:heroku": "cross-env PORT=3001 REACT_APP_INVOICE_LIST=https://xepelin-back.herokuapp.com/invoices/list react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

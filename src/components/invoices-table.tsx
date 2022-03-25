@@ -89,8 +89,10 @@ export function InvoicesTable(props) {
             }
         };
 
+        console.log(process.env)
+
         axios
-        .get(`http://localhost:3000/invoices/list${currencyId !== 0 ? `/${currencyId}` : ''}`, config)
+        .get(`${process.env.REACT_APP_INVOICE_LIST}${currencyId !== 0 ? `/${currencyId}` : ''}`, config)
         .then((response: any) => {
             const rows: GridRowsProp = response.data.result;
             const columns: GridColDef[] = [
