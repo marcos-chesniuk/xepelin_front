@@ -3,6 +3,7 @@
 Vank CLIENT es un proyecto realizado en React junto con Typescript a forma de desafío por parte de Xepelin.
 
 Se trata de una app que sería utilizada por un cliente especifico de Vank para la consulta de facturas.
+Por cuestiones de tiempo no se implementaron el resto de las interacciones con la API.
 
 ---
 
@@ -30,6 +31,36 @@ npm i
 
 ```bash
 npm run start:local
+```
+
+4. En la consola deberia figurar la siguiente frase:
+
+```bash
+Issues checking in progress...
+No issues found.
+```
+
+### Api en entorno Docker
+
+Para correr el proyecto apuntando a la API corriendo en container de Docker:
+
+1. Clonar el repositorio en el directorio deseado.
+
+```bash
+git clone https://github.com/marcos-chesniuk/xepelin_front
+
+```
+
+2. Instalar las dependencias con npm
+
+```bash
+npm i
+```
+
+3. Lanzar la API con comando:
+
+```bash
+npm run start:docker
 ```
 
 4. En la consola deberia figurar la siguiente frase:
@@ -69,6 +100,7 @@ Issues checking in progress...
 No issues found.
 ```
 
+---
 
 ### Netlify
 
